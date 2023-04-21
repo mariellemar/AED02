@@ -54,8 +54,3 @@ void questao24(void){
     processamentoQ24(&valorCompra, &valorPgmto, &nota100, &nota10, &nota1, &troco, &pagamento);
     saidaQ24(nota100, nota10, nota1, pagamento);
 }
-
-int main() {
-    questao24();
-    return 0;
-}

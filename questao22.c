@@ -50,8 +50,3 @@ void questao22(void) {
     processamentoQ22(&qtd_eleitores, &qtd_votos, &turno, &verTurno);
     saidaQ22(&turno, &verTurno);
 }
-
-int main() {
-    questao22();
-    return 0;
-}
