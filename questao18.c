@@ -15,7 +15,7 @@ void processamentoQ18 (float *num1, float *num2, float *media) {
 }
 
 void saidaQ18 (float *media) {
-    printf("Questao 17\n");
+    printf("Questao 18\n");
     printf("Media final: %f \n", *media);
     if (*media >= 7){
         printf("Aprovado");

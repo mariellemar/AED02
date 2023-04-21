@@ -15,7 +15,7 @@ void entradaQ19(int *lado1, int *lado2, int *lado3){
 
 void processamentoQ19(int *lado1, int *lado2, int *lado3, int *tipo, bool *formaTri){
     if(*lado1 + *lado2 > *lado3 && *lado1 + *lado3 > *lado2 && *lado2 + *lado3 > *lado1){
-        *formaTri = true
+        *formaTri = true;
         if(*lado1 == *lado2 && *lado1 == *lado3) {
             *tipo = 1; //equilatero
         } else {

@@ -7,7 +7,8 @@
 void entradaQ10(char *senha) {
     printf("Questao 10\n\n");
     printf("Digite a senha: ");
-    fgets(senha);
+    fgets(senha, 41, stdin);
+    senha[strcspn(senha, "\n")] = '\0';
 }
 
 void processamentoQ10(char *senha, bool *validacao) {
