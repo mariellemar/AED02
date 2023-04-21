@@ -1,0 +1,21 @@
+{
+  "configurations": [
+      {
+          "name": "Win32",
+          "includePath": [
+              "${workspaceFolder}/**",
+              "C:\\Users\\marie\\OneDrive\\Documentos\\Projetos\\C\\Lista 01 - AED02\\**"
+          ],
+          "defines": [
+              "_DEBUG",
+              "UNICODE",
+              "_UNICODE"
+          ],
+          "compilerPath": "C:/MinGW/bin/gcc.exe",
+          "cStandard": "c17",
+          "cppStandard": "c++14",
+          "intelliSenseMode": "gcc-x64"
+      }
+  ],
+  "version": 4
+}
