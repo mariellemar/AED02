@@ -23,7 +23,7 @@ void processamentoQ20(int *num1, int *num2, int *num3, int *res){
 		
 		*res = *num1;
 	}
-	else if(*n2 > *n1 && *n2 > *n3){
+	else if(*num2 > *num1 && *num2 > *num3){
 		
 		*res = *num2;
 	}
@@ -33,14 +33,15 @@ void processamentoQ20(int *num1, int *num2, int *num3, int *res){
 	}
 }
 	
-void saidaQ10(int *res){
+void saidaQ20(int *res){
     system("cls");
 	printf("Questao 20\n");
+
 	if(*res == 1){
 		printf("Numeros identicos");
 	}
 	else{
-		printf("Maior numero: %d\n", saida);
+		printf("Maior numero: %d\n", *res);
 	}
 
 }
@@ -51,10 +52,5 @@ void questao20(void){
 	
 	entradaQ20(&num1, &num2, &num3);
 	processamentoQ20(&num1, &num2, &num3, &res);
-	saidaQ20(res);
-}
-
-int main() {
-    questao20();
-    return 0;
+	saidaQ20(&res);
 }
