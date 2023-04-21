@@ -15,7 +15,7 @@ void processamentoQ08(float *velocidade_kmH, float *velocidade_mS) {
 void saidaQ08(float *velocidade_mS) {
     system("cls");
     printf("Questao 08\n");
-    printf("Convertida, a velocidade informada fica %.1f", *velocidade_mS);
+    printf("Convertida, a velocidade informada fica %.1f m/s", *velocidade_mS);
 }
 
 void questao08(void) {
