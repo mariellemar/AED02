@@ -9,7 +9,9 @@ void entradaQ10(char *senha) {
     printf("Digite a senha: ");
     fgets(senha, 41, stdin);
     senha[strcspn(senha, "\n")] = '\0';
+    getchar();
 }
+
 
 void processamentoQ10(char *senha, bool *validacao) {
     if (strcmpi(senha, "LINGUAGEMC") == 0) {
