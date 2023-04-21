@@ -43,5 +43,6 @@
     "questao01.h": "c",
     "questao07.h": "c"
   },
-  "C_Cpp.errorSquiggles": "disabled"
+  "C_Cpp.errorSquiggles": "disabled",
+  "C_Cpp_Runner.showCompilationTime": false
 }
