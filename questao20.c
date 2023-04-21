@@ -49,7 +49,12 @@ void questao20(void){
 	
 	int num1, num2, num3, res;
 	
-	entrada(&num1, &num2, &num3);
-	processamento(&num1, &num2, &num3, &res);
-	saida(res);
+	entradaQ20(&num1, &num2, &num3);
+	processamentoQ20(&num1, &num2, &num3, &res);
+	saidaQ20(res);
+}
+
+int main() {
+    questao20();
+    return 0;
 }
