@@ -17,8 +17,9 @@ void processamento17 (float *valorCompra, float *valorVenda) {
 }
 
 void saida17 (float *valorVenda) {
+    system("cls");
     printf("Questao 17\n");
-    printf("O valor da venda foi: %f", *valorVenda);
+    printf("O valor da venda foi de R$%.2f", *valorVenda);
 }
 
 void questao17(void){
