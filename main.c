@@ -118,5 +118,24 @@ int main () {
     printf("\n");
     system("pause");
 
+    questao20();
+    printf("\n");
+    system("pause");
+    
+    questao21();
+    printf("\n");
+    system("pause");
+
+    questao22();
+    printf("\n");
+    system("pause");
+    
+    questao23();
+    printf("\n");
+    system("pause");
+
+    questao24();
+    printf("\n");
+    system("pause");
     return 0;
 }
