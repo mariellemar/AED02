@@ -40,8 +40,3 @@ void questao10(void) {
     processamentoQ10(senha, &validacao);
     saidaQ10(&validacao);
 }
-
-int main() {
-    questao10();
-    return 0;
-}
