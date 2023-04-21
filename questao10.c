@@ -12,9 +12,8 @@ void entradaQ10(char *senha) {
     getchar();
 }
 
-
 void processamentoQ10(char *senha, bool *validacao) {
-    if (strcmpi(senha, "LINGUAGEMC") == 0) {
+    if (strcasecmp(senha, "LINGUAGEMC") == 0) {
         *validacao = true;
     } else {
         *validacao = false;
@@ -40,4 +39,9 @@ void questao10(void) {
     entradaQ10(senha);
     processamentoQ10(senha, &validacao);
     saidaQ10(&validacao);
+}
+
+int main() {
+    questao10();
+    return 0;
 }
