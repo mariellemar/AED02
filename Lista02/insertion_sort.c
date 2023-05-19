@@ -4,9 +4,9 @@ elemento na posição correta de uma sublista ordenada à esquerda,
 deslocando os elementos maiores. Continua esse processo até que
 todos os elementos estejam na posição correta e a lista esteja
 ordenada. É eficiente para pequenas listas, mas pode ser menos
-eficiente para listas grandes.O Insertion Sort é chamado assim
-porque ele "insere" cada elemento da lista na posição correta dentro
-de uma sublista ordenada de acordo com o passar das interações
+eficiente para listas grandes.O Insertion Sort "insere" cada
+elemento da lista na posição correta dentro de uma sublista
+ordenada de acordo com o passar das interações
 */
 
 #include<stdio.h>
