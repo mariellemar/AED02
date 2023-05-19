@@ -7,7 +7,6 @@ que a lista está ordenada. É chamado de Bubble Sort porque os
 elementos "borbulham" gradualmente para suas posições corretas
 à medida que as comparações e trocas são feitas.
 */
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<locale.h>
@@ -15,7 +14,7 @@ elementos "borbulham" gradualmente para suas posições corretas
 
 void entrada_bubbleSort(int num[TAM], int *j) {
     printf("Entre com dez numeros para preencher o array "
-           "e pressione enter apos digitar cada um: \n");
+           "e pressione enter aps digitar cada um: \n");
     for (*j = 0; *j < TAM; (*j)++) {
         scanf("%d", &num[*j]);
     }
