@@ -20,7 +20,7 @@ int comp = 0;
 void processamento_insertionSort(int *list, int tamanho) {
     int i, j, aux;
     trocas = 0;
-    for (i = 0; i < tamanho; i++) {
+    for (i = 0; i < tamanho-1; i++) {
         comp++;
         if (list[i] > list[i+1]) {
             aux = list[i+1];
@@ -43,7 +43,7 @@ void processamento_insertionSort(int *list, int tamanho) {
     }
 }
 
-void saida_insertionSort(int *list, int N) {
+void saida_insertionSort(int *list) {
     int k;
     printf("\nLista ordenada: ");
     for(k = 0; k < N; k++) {
@@ -60,7 +60,7 @@ void insertionSort(void) {
         printf("%d ", lista[k]);
     }
     processamento_insertionSort(lista, N);
-    saida_insertionSort(lista, N);
+    saida_insertionSort(lista);
 }
 
 int main(void) {
