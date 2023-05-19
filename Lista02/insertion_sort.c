@@ -13,20 +13,20 @@ de uma sublista ordenada de acordo com o passar das interações
 #include<stdlib.h>
 #define N 9
 
-int lista[N] = {4,5,8,2,9,1,3,7,6};
-//int lista[N] = {9,8,7,6,5,4,3,2,1};
+int lista[N] = {4, 5, 8, 2, 9, 1, 3, 7, 6};
 int trocas = 0;
-int  comp = 0;
+int comp = 0;
 
 void processamento_insertionSort(int *list, int tamanho) {
     int i, j, aux;
     trocas = 0;
-    for (i=0; i<tamanho; i++) {
+    for (i = 0; i < tamanho; i++) {
         comp++;
         if (list[i] > list[i+1]) {
-            aux = list[i+1] = list[i];
+            aux = list[i+1];
+            list[i+1] = list[i];
             list[i] = aux;
-            j = i-1;
+            j = i - 1;
             trocas++;
             while (j >= 0) {
                 comp++;
@@ -37,7 +37,7 @@ void processamento_insertionSort(int *list, int tamanho) {
                 } else {
                     break;
                 }
-                i = j-1;
+                j--;
             }
         }
     }
@@ -47,9 +47,9 @@ void saida_insertionSort(int *list, int N) {
     int k;
     printf("\nLista ordenada: ");
     for(k = 0; k < N; k++) {
-        printf("%d", lista[k]);
-        printf("\n\nComparacoes: %d\ntrocas:%d\n\n", comp, trocas);
+        printf("%d ", list[k]);
     }
+    printf("\n\nComparacoes: %d\ntrocas: %d\n\n", comp, trocas);
 }
 
 void insertionSort(void) {
@@ -57,13 +57,13 @@ void insertionSort(void) {
     printf("Insertion sort\n\n");
     printf("Lista original: ");
     for (k = 0; k < N; k++) {
-        printf("%d", lista[k]);
+        printf("%d ", lista[k]);
     }
     processamento_insertionSort(lista, N);
     saida_insertionSort(lista, N);
 }
 
-void main() {
+int main(void) {
     insertionSort();
 
     return 0;
